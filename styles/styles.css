@@ -1,31 +1,70 @@
 
-
-.container{
+body {
+    margin: 0;
+    background-image: url(../media/fondo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+  
+    min-height: 100vh;
+  }
+  
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Estilo del footer */
+  footer {
+    background-color: rgba(252, 245, 199, 0.547); /* Fondo blanco */
+    color: black; /* Color del texto en negro para que contraste */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer {
     display: flex;
     justify-content: center;
-}
-
-
-.gradient-text{
+    gap: 20px;
+  }
+  
+  /* Otros estilos que ya tenías */
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.116);
+  }
+  
+  .genres {
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+  }
+  
+  .nav-bar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .gradient-text {
     font-family: serif;
     font-size: 50px;
     display: inline-block;
-    background: linear-gradient(to right, rgb(45,130,183), rgb(130,48,56));
+    background: linear-gradient(to right, rgb(45, 130, 183), rgb(130, 48, 56));
     -webkit-background-clip: text;
     color: transparent;
-}
-
-
-
-
-
-body{
-    background-color: rgb(252,245,199);
-}
-
-
-
-colores{
-    color: rgb(130,48,56);
-    color: rgb(30,0,14);
-}
+  }
+  

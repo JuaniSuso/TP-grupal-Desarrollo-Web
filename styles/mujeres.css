@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+
+body {
+  background-color: rgb(45, 130, 183);
+  margin: 0; 
+}
+
+
+.nav-bar {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.116);
+    font-family: 'Quicksand', sans-serif;
+    z-index: 1000; 
+    box-sizing: border-box;
+    height: 50px; 
+}
+
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: black;
+}
+
+
+main {
+    margin-top: 70px; 
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2{
+    color: white;
+    font-family: quicksand;
+    padding: 20px;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: white ;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.product-card {
+    margin: 40px;
+    background-color:rgb(252, 245, 199);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+
+.product-card-content {
+    padding: 15px;
+}
+
+
+.product-card h2 {
+    color: black;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+
+
+
+.product-card .price {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.cart-button{
+    background-color: rgb(45, 130, 183);
+}
+
+
+footer {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgba(252, 245, 199, 0.371);
+    position: relative; /* Puedes usar 'relative' o 'static' */
+    font-family: quicksand;
+    
+   .img-footer{ 
+    width: 50px;
+    height: 30px;
+   }
+  
+   .img-footer:hover{
+    width: 55px;
+    height: 35px;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.112);
+   }
+  
+   
+   
+  }

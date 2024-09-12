@@ -1,0 +1,93 @@
+/* Importa la fuente Quicksand */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/* Cuerpo general del documento */
+body {
+    margin: 0;
+    background-image: url(../media/fondo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Organiza el contenido de arriba a abajo */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Barra de navegación */
+.nav-bar {
+    position: fixed;
+    top: 0; /* Posiciona el navbar en la parte superior */
+    left: 0; /* Alinea el navbar con el lado izquierdo */
+    width: 100%; 
+    display: flex;
+    justify-content: space-around; 
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.116);
+    font-family: 'Quicksand', sans-serif;
+    z-index: 1000; /* Asegura que el navbar esté encima de otros elementos */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: black;
+}
+
+
+main {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 60px; 
+    width: 100%;
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(252, 245, 199, 0.529);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* Alinea el footer al final */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-footer {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+ 
+ 

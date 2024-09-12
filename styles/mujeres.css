@@ -32,6 +32,11 @@ body {
     color: black;
 }
 
+.genres {
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+}
 
 main {
     margin-top: 70px; 
@@ -98,6 +103,7 @@ hr{
 
 .cart-button{
     background-color: rgb(45, 130, 183);
+    box-shadow: rgb(150, 150, 150) 5px 5px;
 }
 
 

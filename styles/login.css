@@ -39,6 +39,11 @@ body {
     color: black;
 }
 
+.genres {
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+}
 
 main {
     flex: 1; 

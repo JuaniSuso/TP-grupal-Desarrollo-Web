@@ -1,7 +1,7 @@
 /* Importa la fuente Quicksand */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-/* Cuerpo general del documento */
+
 body {
     margin: 0;
     background-image: url(../media/fondo3.jpg);
@@ -10,8 +10,8 @@ body {
     background-position: center;
     min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Organiza el contenido de arriba a abajo */
-    align-items: center; /* Centra el contenido horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
 }
 
 /* Barra de navegación */

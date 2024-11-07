@@ -111,7 +111,7 @@ footer {
     gap: 30px;
     padding: 20px;
     background-color: rgba(252, 245, 199, 0.371);
-    position: relative; /* Puedes usar 'relative' o 'static' */
+    position: relative; 
     font-family: quicksand;
     
     .img-footer{ 

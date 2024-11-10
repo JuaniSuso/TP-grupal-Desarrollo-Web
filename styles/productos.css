@@ -85,9 +85,78 @@ footer {
 
 
 
-.product-details{
+ /* .product-details{
     display: flex;
     flex-direction: column;
+    color: black;
+    background-color:rgb(252, 245, 199);
+    padding: 5px;
+    margin: 50px;
+    max-width: 800px;
+
+    h2{
+        color: black;
+    }
+
+    img{
+        width: 50%;
+    }
+}          
+    */
+
+/* Estilos para el contenedor principal */
+.product-details {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* La primera columna para la imagen y la segunda para el contenido */
+    gap: 20px; /* Espacio entre la imagen y el contenido */
+    padding: 20px; /* Espaciado interno opcional */
+    align-items: start; /* Alinea los elementos al inicio verticalmente */
     
-    width: 50%;
-}
+  }
+  
+ 
+  .product-details img {
+    width: 100%;
+    
+    object-fit: cover; 
+    border-radius: 8px; 
+  }
+  
+  /* Asigna los elementos de texto y botón a la segunda columna */
+  .product-details h2,
+  .product-details p,
+  .product-details button {
+    grid-column: 2; /* Todos los elementos excepto la imagen van en la segunda columna */
+  }
+  
+  /* Estilos adicionales */
+  #product-name {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  }
+  
+  #product-description {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    color: white;
+  }
+  
+  #product-price {
+    font-size: 20px;
+    color: white;
+    margin: 0 0 20px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  button:hover {
+    background-color: #219150;
+  }

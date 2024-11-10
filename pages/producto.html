@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/productos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/productos.css" />
     <title>Detalles del Producto</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="nav-bar">
-            <a href="../index.html">Inicio</a>
-            <a href="hombres.html">Hombre</a>
-            <a href="mujeres.html">Mujer</a>
-        </nav>
+      <nav class="nav-bar">
+        <a href="../index.html">Inicio</a>
+        <a href="hombres.html">Hombre</a>
+        <a href="mujeres.html">Mujer</a>
+      </nav>
     </header>
 
     <main>
-        <section class="product-details">
-            <img id="product-image" alt="Imagen del producto">
-            <h2 id="product-name"></h2>
-            <p id="product-price"></p>
-            <button>Agregar al carrito</button>
-        </section>
+      <section class="product-details">
+        <img id="product-image" alt="Imagen del producto" />
+        <h2 id="product-name"></h2>
+        <p id="product-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          pariatur, harum atque quia nisi totam quam recusandae magni
+          voluptatibus praesentium reiciendis optio nobis temporibus culpa at
+          nulla fugiat vero illum.
+        </p>
+        <p id="product-price"></p>
+        <button>Agregar al carrito</button>
+      </section>
     </main>
 
     <script src="../scripts/producto.js"></script>
     <script>
-        
-        const producto = JSON.parse(localStorage.getItem("productoSeleccionado"));
+      const producto = JSON.parse(localStorage.getItem("productoSeleccionado"));
 
-        if (producto) {
-            document.getElementById("product-image").src = producto.imagen;
-            document.getElementById("product-name").innerText = producto.nombre;
-            document.getElementById("product-price").innerText = "$" + producto.precio;
-        } else {
-            document.querySelector("main").innerHTML = "<p>Producto no encontrado.</p>";
-        }
+      if (producto) {
+        document.getElementById("product-image").src = producto.imagen;
+        document.getElementById("product-name").innerText = producto.nombre;
+        document.getElementById("product-price").innerText =
+          "$" + producto.precio;
+      } else {
+        document.querySelector("main").innerHTML =
+          "<p>Producto no encontrado.</p>";
+      }
     </script>
-</body>
+  </body>
 </html>

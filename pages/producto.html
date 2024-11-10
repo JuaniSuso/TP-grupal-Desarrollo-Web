@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/detalles.css">
+    <link rel="stylesheet" href="../styles/productos.css">
     <title>Detalles del Producto</title>
 </head>
 <body>
@@ -20,12 +20,13 @@
             <img id="product-image" alt="Imagen del producto">
             <h2 id="product-name"></h2>
             <p id="product-price"></p>
+            <button>Agregar al carrito</button>
         </section>
     </main>
 
     <script src="../scripts/producto.js"></script>
     <script>
-        // Leer los detalles del producto desde localStorage
+        
         const producto = JSON.parse(localStorage.getItem("productoSeleccionado"));
 
         if (producto) {

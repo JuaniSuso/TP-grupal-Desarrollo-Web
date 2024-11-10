@@ -11,7 +11,7 @@
         <nav class="nav-bar">
             <div class="genres">
                 <a href="../index.html">Inicio</a>
-                <a href="/pages/hombres.html">Hombre</a>
+                <a href="hombres.html">Hombre</a>
                 <a href="mujeres.html">Mujer</a>
             </div>
             <a class="login" href="login.html">Iniciar sesión</a>
@@ -27,19 +27,20 @@
                 <div class="product-card-content">
                     <h2>Camisa blanca mujer</h2>
                     <div class="price">$35</div>
-                    <button class="cart-button">Agregar al carrito</button>
+                    
+                    <button class="view-more" onclick="verMasProducto('Camisa blanca mujer', '../media/producto1M.jfif', 35)">Ver más</button>
                 </div>
             </div>
 
             <div class="product-card">
-                <img src="../media/334c442d-d06d-46f7-bf3d-3f633ea2ecb7.cc68979b0823b2583b1045f1e55ff197.webp" alt="Camisa blanca mujer">
+                <img src="../media/334c442d-d06d-46f7-bf3d-3f633ea2ecb7.cc68979b0823b2583b1045f1e55ff197.webp" alt="Vestido mujer">
                 <div class="product-card-content">
                     <h2>Vestido mujer</h2>
-                    <div class="price">$65</div>    
-                    <button class="cart-button">Agregar al carrito</button>
+                    <div class="price">$65</div>
+                    
+                    <button class="view-more" onclick="verMasProducto('Vestido mujer', '../media/334c442d-d06d-46f7-bf3d-3f633ea2ecb7.cc68979b0823b2583b1045f1e55ff197.webp', 65)">Ver más</button>
                 </div>
             </div>
-
         </section>
     </main>
 
@@ -50,5 +51,7 @@
             <img class="img-footer" src="../media/whatsapp.svg" alt="WhatsApp">
         </div>
     </footer>
+
+    <script src="../js/productos.js"></script>
 </body>
 </html>

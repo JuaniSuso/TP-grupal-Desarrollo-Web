@@ -1,91 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-
 body {
-    background-color: rgb(45, 130, 183);
-    margin: 0; 
+  background-color: rgb(45, 130, 183);
+  margin: 0;
 }
-
 
 .nav-bar {
-    position: fixed;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.116);
-    font-family: 'Quicksand', sans-serif;
-    z-index: 1000; 
-    box-sizing: border-box;
-    height: 50px; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.116);
+  font-family: "Quicksand", sans-serif;
+  z-index: 1000;
+  box-sizing: border-box;
+  height: 50px;
 }
 
-
 .nav-bar a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-bar a:hover {
-    color: black;
+  color: black;
 }
 
 .genres {
-    display: flex;
-    justify-content: left;
-    gap: 40px;
+  display: flex;
+  justify-content: left;
+  gap: 40px;
 }
 
 main {
-    margin-top: 70px; 
-    padding: 20px;
-    font-family: 'Quicksand', sans-serif;
+  margin-top: 70px;
+  padding: 20px;
+  font-family: "Quicksand", sans-serif;
 }
 
-h2{
-    color: white;
-    font-family: quicksand;
-    padding: 20px;
+h2 {
+  color: white;
+  font-family: quicksand;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
-    display: flex;
-    gap: 30px;
-    padding: 20px;
-    background-color: rgba(252, 245, 199, 0.371);
-    position: relative; 
-    font-family: quicksand;
-    
-    .img-footer{ 
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  background-color: rgba(252, 245, 199, 0.371);
+  position: relative;
+  font-family: quicksand;
+
+  .img-footer {
     width: 50px;
     height: 30px;
-}
+  }
 
-.img-footer:hover{
+  .img-footer:hover {
     width: 55px;
     height: 35px;
     transition: 0.5s;
     background-color: rgba(0, 0, 0, 0.112);
+  }
 }
 
-}
-
-
-
- /* .product-details{
+/* .product-details{
     display: flex;
     flex-direction: column;
     color: black;
@@ -106,57 +88,65 @@ footer {
 
 /* Estilos para el contenedor principal */
 .product-details {
-    display: grid;
-    grid-template-columns: 300px 1fr; /* La primera columna para la imagen y la segunda para el contenido */
-    gap: 20px; /* Espacio entre la imagen y el contenido */
-    padding: 20px; /* Espaciado interno opcional */
-    align-items: start; /* Alinea los elementos al inicio verticalmente */
-    
-  }
-  
- 
-  .product-details img {
-    width: 100%;
-    
-    object-fit: cover; 
-    border-radius: 8px; 
-  }
-  
-  /* Asigna los elementos de texto y botón a la segunda columna */
-  .product-details h2,
-  .product-details p,
-  .product-details button {
-    grid-column: 2; /* Todos los elementos excepto la imagen van en la segunda columna */
-  }
-  
-  /* Estilos adicionales */
-  #product-name {
-    font-size: 24px;
-    margin: 0 0 10px 0;
-  }
-  
-  #product-description {
-    font-size: 16px;
-    margin: 0 0 10px 0;
-    color: white;
-  }
-  
-  #product-price {
-    font-size: 20px;
-    color: white;
-    margin: 0 0 20px 0;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100px;
-  }
-  
-  button:hover {
-    background-color: #219150;
-  }
+  display: flex;
+  gap: 30px;
+}
+
+.image-details {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.product-body {
+  border-radius: 25px;
+  border-color: black;
+}
+
+.product-body {
+  display: flex;
+  flex-direction: column;
+}
+.button-body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Asigna los elementos de texto y botón a la segunda columna */
+.product-details h2,
+.product-details p,
+.product-details button {
+  grid-column: 2; /* Todos los elementos excepto la imagen van en la segunda columna */
+}
+
+/* Estilos adicionales */
+#product-name {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+#product-description {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+#product-price {
+  font-size: 20px;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #219150;
+}

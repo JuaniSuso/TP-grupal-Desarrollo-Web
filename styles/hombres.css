@@ -101,6 +101,10 @@ hr{
     margin-top: 10px;
 }
 
+.product-card .descripcion{
+    display: none;
+}
+
 .cart-button{
     background-color: rgb(45, 130, 183);
     box-shadow: rgb(150, 150, 150) 5px 5px;
@@ -128,8 +132,3 @@ footer {
 }
 
 }
-
-.img-cart { 
-    width: 20px;
-    height: 20px;
-  }

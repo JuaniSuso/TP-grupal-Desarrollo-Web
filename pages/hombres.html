@@ -14,9 +14,11 @@
           <a href="../index.html">Inicio</a>
           <a href="mujeres.html">Mujer</a>
         </div>
-      <div class="nav-icons">
+        <div class="nav-icons">
           <a class="login" href="login.html">Iniciar sesión</a>
-          <a href="carrito.html">Carrito</a>
+          <a href="carrito.html"
+            ><img class="img-cart" src="../media/cart.svg" alt="Carrito"
+          /></a>
         </div>
       </nav>
     </header>
@@ -29,10 +31,13 @@
           <img src="../media/camisa.jfif" alt="Camisa blanca hombre" />
           <div class="product-card-content">
             <h2>Camisa blanca hombre</h2>
+            <div class="descripcion">
+              Camisa manga corta blanca, ideal para el verano
+            </div>
             <div class="price">$35</div>
             <button
               class="view-more"
-              onclick="verMasProducto('Camisa blanca hombre', '../media/camisa.jfif', 35)"
+              onclick="verMasProducto('Camisa blanca hombre', '../media/camisa.jfif', 35, 'Camisa manga corta blanca, ideal para el verano')"
             >
               Ver más
             </button>
@@ -43,10 +48,14 @@
           <img src="../media/producto2H.jpg" alt="Camisa blanca hombre" />
           <div class="product-card-content">
             <h2>Malla amarilla hombre</h2>
+            <div class="descripcion">
+              Malla amarilla para hombre, fabricada con material de calidad y
+              cómoda para su uso.
+            </div>
             <div class="price">$25</div>
             <button
               class="view-more"
-              onclick="verMasProducto('Malla amarilla hombre', '../media/producto2H.jpg', 25)"
+              onclick="verMasProducto('Malla amarilla hombre', '../media/producto2H.jpg', 25, 'Malla amarilla para hombre, fabricada con material de calidad y cómoda para su uso.')"
             >
               Ver más
             </button>
@@ -57,10 +66,13 @@
           <img src="../media/conjunto.jpg" alt="Conjunto Hombre" />
           <div class="product-card-content">
             <h2>Conjunto Flores</h2>
+            <div class="descripcion">
+              Conjunto de camisa y pantalón de flores.
+            </div>
             <div class="price">$40</div>
             <button
               class="view-more"
-              onclick="verMasProducto('Conjunto Hombre', '../media/conjunto.jpg', 40)"
+              onclick="verMasProducto('Conjunto Hombre', '../media/conjunto.jpg', 40, 'Conjunto de camisa y pantalón de flores.')"
             >
               Ver más
             </button>

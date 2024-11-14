@@ -15,7 +15,7 @@
         <a href="mujeres.html">Mujer</a>
       </div>
       <div class="nav-icons">
-        <a href="carrito.html">Carrito</a>
+        <a href="carrito.html"><img class="img-cart" src="../media/cart.svg" alt="Carrito"></a>
       </div>
     </nav>
   </header>
@@ -29,10 +29,6 @@
       <div class="product-body">
         <h2 id="product-name"></h2>
         <p id="product-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-          pariatur, harum atque quia nisi totam quam recusandae magni
-          voluptatibus praesentium reiciendis optio nobis temporibus culpa at
-          nulla fugiat vero illum.
         </p>
 
         <div class="button-body">
@@ -56,6 +52,7 @@
       document.getElementById("product-image").src = producto.imagen;
       document.getElementById("product-name").innerText = producto.nombre;
       document.getElementById("product-price").innerText = "$" + producto.precio;
+      document.getElementById("product-description").innerText = producto.descripcion;
     } else {
       document.querySelector("main").innerHTML = "<p>Producto no encontrado.</p>";
     }

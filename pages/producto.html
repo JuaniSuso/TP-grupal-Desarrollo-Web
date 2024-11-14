@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../styles/productos.css" />
   <title>Detalles del Producto</title>
 </head>
-
 <body>
   <header>
     <nav class="nav-bar">
-      <a href="../index.html">Inicio</a>
-      <a href="hombres.html">Hombre</a>
-      <a href="mujeres.html">Mujer</a>
+      <div class="genres">
+        <a href="../index.html">Inicio</a>
+        <a href="hombres.html">Hombre</a>
+        <a href="mujeres.html">Mujer</a>
+      </div>
+      <div class="nav-icons">
+        <a href="carrito.html">Carrito</a>
+      </div>
     </nav>
   </header>
 
@@ -38,12 +41,10 @@
           </div>
 
           <div>
-            <button>Agregar al carrito</button>
+            <button id="add-to-cart">Agregar al carrito</button>
           </div>
         </div>
-
       </div>
-
     </section>
   </main>
 
@@ -54,13 +55,19 @@
     if (producto) {
       document.getElementById("product-image").src = producto.imagen;
       document.getElementById("product-name").innerText = producto.nombre;
-      document.getElementById("product-price").innerText =
-        "$" + producto.precio;
+      document.getElementById("product-price").innerText = "$" + producto.precio;
     } else {
-      document.querySelector("main").innerHTML =
-        "<p>Producto no encontrado.</p>";
+      document.querySelector("main").innerHTML = "<p>Producto no encontrado.</p>";
     }
+
+
+    document.getElementById("add-to-cart").addEventListener("click", function () {
+      let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+      carrito.push(producto);
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+
+      window.location.href = "carrito.html";
+    });
   </script>
 </body>
-
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/hombres.css" />
+    <link rel="stylesheet" href="../styles/carrito.css" />
     <title>Ropa de hombres</title>
   </head>
   <body>
@@ -11,10 +12,12 @@
       <nav class="nav-bar">
         <div class="genres">
           <a href="../index.html">Inicio</a>
-          <a href="hombres.html">Hombre</a>
           <a href="mujeres.html">Mujer</a>
         </div>
-        <a class="login" href="login.html">Iniciar sesión</a>
+      <div class="nav-icons">
+          <a class="login" href="login.html">Iniciar sesión</a>
+          <a href="carrito.html">Carrito</a>
+        </div>
       </nav>
     </header>
 
@@ -23,13 +26,13 @@
       <hr />
       <section class="cards">
         <div class="product-card">
-          <img src="../media/producto1H.jfif" alt="Camisa blanca hombre" />
+          <img src="../media/camisa.jfif" alt="Camisa blanca hombre" />
           <div class="product-card-content">
             <h2>Camisa blanca hombre</h2>
             <div class="price">$35</div>
             <button
               class="view-more"
-              onclick="verMasProducto('Camisa blanca hombre', '../media/producto1H.jfif', 35)"
+              onclick="verMasProducto('Camisa blanca hombre', '../media/camisa.jfif', 35)"
             >
               Ver más
             </button>
@@ -44,6 +47,20 @@
             <button
               class="view-more"
               onclick="verMasProducto('Malla amarilla hombre', '../media/producto2H.jpg', 25)"
+            >
+              Ver más
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="../media/conjunto.jpg" alt="Conjunto Hombre" />
+          <div class="product-card-content">
+            <h2>Conjunto Flores</h2>
+            <div class="price">$40</div>
+            <button
+              class="view-more"
+              onclick="verMasProducto('Conjunto Hombre', '../media/conjunto.jpg', 40)"
             >
               Ver más
             </button>

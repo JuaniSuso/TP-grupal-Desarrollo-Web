@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/carrito.css" />
+  <title>Carrito de Compras</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="genres">
+        <a href="../index.html">Inicio</a>
+        <a href="hombres.html">Hombre</a>
+        <a href="mujeres.html">Mujer</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Carrito de Compras</h1>
+    <section id="cart-items">
+    </section>
+
+    <section id="cart-total">
+      <h3>Total: <span id="total-price"></span></h3>
+    </section>
+  </main>
+
+  <script>
+
+    function cargarCarrito() {
+      carrito = JSON.parse(localStorage.getItem("carrito"))
+      cartItems = document.getElementById("cart-items");
+      let total = 0;
+
+
+      if (carrito.length === 0) {
+        cartItems.innerHTML = "<p>El carrito está vacío.</p>";
+      } else {
+        cartItems.innerHTML = "";
+        carrito.forEach((producto, index) => {
+          total += producto.precio;
+          item = document.createElement("div");
+          item.className = "cart-item";
+          item.innerHTML = `
+            <img src="${producto.imagen}" alt="${producto.nombre}" />
+            <p>${producto.nombre} : $${producto.precio}</p>
+            <button class="delete-btn" onclick="eliminarProducto(${index})">-</button>
+          `;
+          cartItems.appendChild(item);
+        });
+      }
+
+      document.getElementById("total-price").innerText = "$" + total;
+    }
+
+    function eliminarProducto(index) {
+      carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+      carrito.splice(index, 1);
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+      cargarCarrito();
+    }
+
+
+    cargarCarrito();
+  </script>
+</body>
+</html>

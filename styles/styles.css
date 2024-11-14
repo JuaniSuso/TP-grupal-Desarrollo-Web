@@ -16,33 +16,26 @@ main {
   padding: 20px;
 }
 
-
-
 footer {
   display: flex;
   gap: 30px;
   padding: 20px;
   background-color: rgba(252, 245, 199, 0.371);
-  position: relative; 
+  position: relative;
   font-family: quicksand;
-  
- .img-footer{ 
+}
+
+.img-footer { 
   width: 50px;
   height: 30px;
- }
+}
 
- .img-footer:hover{
+.img-footer:hover {
   width: 55px;
   height: 35px;
   transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.112);
- }
-
- 
- 
 }
-
-
 
 .container {
   display: flex;
@@ -65,14 +58,18 @@ footer {
   gap: 40px;
 }
 
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
 .nav-bar a {
   color: white;
   text-decoration: none;
 }
 
-.nav-bar a:hover{
+.nav-bar a:hover {
   color: black;
-  
 }
 
 .gradient-text {
@@ -83,4 +80,9 @@ footer {
   -webkit-background-clip: text;
   color: transparent;
   border: 1px;
+}
+
+.img-cart { 
+  width: 20px;
+  height: 20px;
 }
